@@ -11,3 +11,5 @@ nbconvert==7.17.1
 ipykernel==7.3.0
 weasyprint==70.0
 tabulate==0.10.0
+plotly
+streamlit
