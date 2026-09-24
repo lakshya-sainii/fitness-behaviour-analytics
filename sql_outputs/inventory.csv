@@ -1,0 +1,19 @@
+table_name,filename,rows,columns,users,date_column,start,end,grain,duplicate_rows,duplicate_keys,megabytes,sha256
+dailyActivity,dailyActivity_merged.csv,940,15,33,ActivityDate,2016-04-12,2016-05-12,user-day,0,0,0.11,4b8f557eb29cd929cee7cc2d2a5e7704578bbffbc42c352e7b0c42bc4f3c6ac8
+dailyCalories,dailyCalories_merged.csv,940,3,33,ActivityDay,2016-04-12,2016-05-12,user-day,0,0,0.03,1e9f02499a1576f51032734b1c7d3b8c51a9fcef2ef3dee80dcfbcd341c76d40
+dailyIntensities,dailyIntensities_merged.csv,940,10,33,ActivityDay,2016-04-12,2016-05-12,user-day,0,0,0.07,39dbfa20a0f7ca61d9bce9a77f87c7ffc85efd62dbf9f51e1a43d285a5698b24
+dailySteps,dailySteps_merged.csv,940,3,33,ActivityDay,2016-04-12,2016-05-12,user-day,0,0,0.03,6142382005ae485049a701b0b0e7099ee594af26cf05667928e034e45446a601
+heartrate_seconds,heartrate_seconds_merged.csv,2483658,3,14,Time,2016-04-12 00:00:00,2016-05-12 16:20:00,user-timestamp,0,0,89.59,64b945c3d86f598b8b8a9d26e46585e1ccdc99b82ab1ecfd9784e84ab856d93d
+hourlyCalories,hourlyCalories_merged.csv,22099,3,33,ActivityHour,2016-04-12 00:00:00,2016-05-12 15:00:00,user-hour,0,0,0.8,10297488228ac4bf9cb86e8aa640208fe02e4fc479f6af1261ce52d8ab7f6b22
+hourlyIntensities,hourlyIntensities_merged.csv,22099,4,33,ActivityHour,2016-04-12 00:00:00,2016-05-12 15:00:00,user-hour,0,0,0.9,a2cc7eccfb86e710931bcb34678910cbdc2bf4798b0e1c9c43f37f919871fece
+hourlySteps,hourlySteps_merged.csv,22099,3,33,ActivityHour,2016-04-12 00:00:00,2016-05-12 15:00:00,user-hour,0,0,0.8,83b9c1acc782b58a75a550f2f1d4ee9da7723e0ec26798b502768420cf6d7316
+minuteCaloriesNarrow,minuteCaloriesNarrow_merged.csv,1325580,3,33,ActivityMinute,2016-04-12 00:00:00,2016-05-12 15:59:00,user-timestamp,0,0,66.44,ebf43f28924324ea801c0f1e05f6cf26820b2a2114048f9a3e1632df9be3a285
+minuteCaloriesWide,minuteCaloriesWide_merged.csv,21645,62,33,ActivityHour,2016-04-13 00:00:00,2016-05-13 08:00:00,user-hour with 60 minute columns,0,0,22.99,73cd96b1ce0c873a018e417f322f97b15ff693d0179f7f7cd3067dd3f432cd5f
+minuteIntensitiesNarrow,minuteIntensitiesNarrow_merged.csv,1325580,3,33,ActivityMinute,2016-04-12 00:00:00,2016-05-12 15:59:00,user-timestamp,0,0,46.36,6027ecc8cd02023da6d992b8b235838ee3624d4804a44d126acacc9db0eadfae
+minuteIntensitiesWide,minuteIntensitiesWide_merged.csv,21645,62,33,ActivityHour,2016-04-13 00:00:00,2016-05-13 08:00:00,user-hour with 60 minute columns,0,0,3.31,dce62d4fcbe1762bb02981e31d86d2cb40c4ecda856ce4066d60003c4dd9fdb8
+minuteMETsNarrow,minuteMETsNarrow_merged.csv,1325580,3,33,ActivityMinute,2016-04-12 00:00:00,2016-05-12 15:59:00,user-timestamp,0,0,47.69,2d66a4b382419b65385ac7b15326c9bff662ba5406ce89ec4667c2ac2834fde5
+minuteSleep,minuteSleep_merged.csv,188521,4,24,date,2016-04-11 20:48:00,2016-05-12 09:56:00,user-timestamp-log,543,543,8.85,2e12e0df4bc663f3fc8932cdfd3b4e4187f85877fd6057fd6261d2309c0368ba
+minuteStepsNarrow,minuteStepsNarrow_merged.csv,1325580,3,33,ActivityMinute,2016-04-12 00:00:00,2016-05-12 15:59:00,user-timestamp,0,0,46.53,5ffe29b2e27c337d111686c28fff2eb8757a8bcdcf6b5d6bff92162c6f562ce4
+minuteStepsWide,minuteStepsWide_merged.csv,21645,62,33,ActivityHour,2016-04-13 00:00:00,2016-05-13 08:00:00,user-hour with 60 minute columns,0,0,3.48,2b7bb41614e982e398e63f7cd5c7056c842f25c82bb9e64e3e3ce35a5bb16cda
+sleepDay,sleepDay_merged.csv,413,5,24,SleepDay,2016-04-12 00:00:00,2016-05-12 00:00:00,user-day,3,3,0.02,2d4250ca47dfc74263f1b61fe4ba3e338c83faab0d352fb0fefa93464b170e53
+weightLogInfo,weightLogInfo_merged.csv,67,8,8,Date,2016-04-12 06:47:11,2016-05-12 23:59:59,user-timestamp,0,0,0.01,50b40176f926562e1a522dcb4e75f30c4f04441a7d5b8e570f704b1fbab2b738

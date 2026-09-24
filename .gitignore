@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+
+# Large/raw Fitbit source files
+Fitbit_heartrate_seconds.csv
+*heartrate_seconds*.csv
+
+# Local/database files
+*.db
+
+# Environment
+.env
+.venv/
+venv/

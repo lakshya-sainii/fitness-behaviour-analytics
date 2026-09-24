@@ -1,0 +1,9 @@
+test,comparison,n,statistic,p_value,effect_size,effect_definition,p_holm
+Shapiro-Wilk,mean_steps,33,0.981696538915359,0.835971545572683,,W reported in statistic,
+Shapiro-Wilk,mean_active,33,0.9699510293305117,0.4788410009183737,,W reported in statistic,
+Shapiro-Wilk,mean_calories,33,0.9499463362573428,0.13255813569655828,,W reported in statistic,
+Spearman,mean_steps / mean_calories,33,0.3128342245989305,0.07629548550277288,0.3128342245989305,Spearman rho; one mean per user,0.3814774275138644
+Spearman,mean_steps / mean_sleep,24,-0.13043478260869562,0.5435259752175853,-0.13043478260869562,Spearman rho; one mean per user,1.0
+Spearman,mean_active / mean_sleep,24,0.07130434782608694,0.7405746871767944,0.07130434782608694,Spearman rho; one mean per user,1.0
+Mann-Whitney U,Sleep loggers vs nonloggers: mean steps,33,114.0,0.8240614188909504,0.05555555555555558,Cliff delta; positive favors sleep loggers,1.0
+Wilcoxon paired,Weekend minus weekday user mean steps,32,245.0,0.7328818910755217,0.07196969696969698,Matched rank-biserial; positive favors weekend,1.0

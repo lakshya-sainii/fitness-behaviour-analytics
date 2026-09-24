@@ -1,0 +1,15 @@
+check,count,status,interpretation
+Participants vs brief,33.0,Review,33 activity users vs 30 stated
+Exact sleep duplicates,3.0,Fixed,413 raw rows -> 410 unique
+Minute sleep duplicates,543.0,Fixed,Deduplicated before episode aggregation
+Zero-step days,77.0,Flagged,May be nonwear or true inactivity
+Near-zero days (<100),87.0,Excluded,Proxy threshold; sensitivity table retained
+Sedentary =1440,79.0,Excluded,24 hours; does not establish actual nonwear
+Classified minutes >1440,0.0,Review,Impossible full-day duration if present
+Missing Fat,65.0,Retained,Do not impute sparse body-fat field
+Multiple sleep records,46.0,Retained,Possible split sleep/naps; no automatic deletion
+Asleep exceeds in-bed,0.0,Checked,Reject impossible records if present
+Users with all 31 activity dates,21.0,Review,Unequal observation opportunity
+Wide format outside target dates,109.0,Review,Wide files are not identical-coverage substitutes
+Distance and intensity units,,Unresolved,No embedded unit dictionary; raw scores only
+Demographic fields,0.0,Limitation,"No age, sex, height or profession"

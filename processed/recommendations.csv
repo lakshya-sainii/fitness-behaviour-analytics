@@ -1,0 +1,6 @@
+Recommendation,Evidence,Action,KPI
+Quality-aware onboarding,94/940 days excluded; raw/clean mean differs by 789 steps,Test opt-in setup/sync checks and explain missing data before issuing activity nudges,Retained recording days / eligible days; seven-day activation; notification opt-out
+Personal baseline campaigns,"45.4% of retained days <7,500 steps; light activity is 84.7% of active minutes",Test incremental movement goals matched to prior activity and the rule personas,Change in user-level retained-day steps; goal engagement; adverse/negative feedback
+Timing experiment,18:00 peak averages 660 steps per observed hour,Randomize individualized reminder timing against a fixed schedule and a no-reminder holdout,Incremental weekly active days; prompt engagement; notification fatigue
+Optional sleep onboarding,24/33 sleep loggers; 44.1% of sleep days <7 h,Test a sleep-summary onboarding path and consistent-routine content for consenting users,Sleep-feature activation; 14-day logging continuity; membership conversion
+Keep weight optional,8/33 weight loggers; 41/67 entries manual,Prioritize activity/sleep value messages; interview weight loggers before adding weight-led campaigns,Feature opt-in and completion; entry burden; D30 retention by randomized arm

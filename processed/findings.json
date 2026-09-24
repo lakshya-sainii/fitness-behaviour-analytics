@@ -1,0 +1,10 @@
+[
+  "**Coverage:** 33 activity users, 24 sleep users, 14 heart-rate users and eight weight users (Chart 01).",
+  "**Wear-quality sensitivity:** 94/940 activity days excluded; mean steps move from 7,638 to 8,427 under the proxy (Chart 03).",
+  "**Movement baseline:** 45.4% of retained days stay below 7,500 steps (Chart 04).",
+  "**Light activity dominates:** 84.7% of classified active minutes are light (Chart 16).",
+  "**Timing:** 18:00 is the pooled peak, 660 steps per observed hour (Chart 14).",
+  "**Sleep:** mean 419.2 minutes; 44.1% of unique sleep days below seven hours (Chart 18).",
+  "**Weekend uncertainty:** paired gap +120 steps/day, with 95% CI spanning -959 to +1143 (Chart 13).",
+  "**Weight friction hypothesis:** 41/67 logs manual and 65/67 missing Fat; eight users provide all weight records (Charts 02, 25)."
+]

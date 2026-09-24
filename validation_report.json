@@ -1,0 +1,167 @@
+{
+  "status": "PASS",
+  "executed_code_cells": 45,
+  "unexecuted_code_cells": 0,
+  "error_outputs": 0,
+  "stderr_outputs": 0,
+  "embedded_charts": 30,
+  "png_charts": 30,
+  "sql_statements_passed": 58,
+  "reconciliation_metrics_passed": 9,
+  "processed_csv_parquet_checks": [
+    {
+      "table": "clean_daily_activity",
+      "rows": 846,
+      "columns": 27,
+      "status": "PASS"
+    },
+    {
+      "table": "clean_sleep",
+      "rows": 410,
+      "columns": 11,
+      "status": "PASS"
+    },
+    {
+      "table": "clean_weight",
+      "rows": 67,
+      "columns": 9,
+      "status": "PASS"
+    },
+    {
+      "table": "cleaning_log",
+      "rows": 12,
+      "columns": 7,
+      "status": "PASS"
+    },
+    {
+      "table": "cluster_profiles",
+      "rows": 2,
+      "columns": 6,
+      "status": "PASS"
+    },
+    {
+      "table": "cluster_selection",
+      "rows": 5,
+      "columns": 3,
+      "status": "PASS"
+    },
+    {
+      "table": "column_audit",
+      "rows": 259,
+      "columns": 5,
+      "status": "PASS"
+    },
+    {
+      "table": "flagged_daily_activity",
+      "rows": 940,
+      "columns": 17,
+      "status": "PASS"
+    },
+    {
+      "table": "hourly_activity",
+      "rows": 20045,
+      "columns": 11,
+      "status": "PASS"
+    },
+    {
+      "table": "hr_bands",
+      "rows": 54,
+      "columns": 5,
+      "status": "PASS"
+    },
+    {
+      "table": "hr_hourly",
+      "rows": 6013,
+      "columns": 6,
+      "status": "PASS"
+    },
+    {
+      "table": "hr_intensity_join",
+      "rows": 5990,
+      "columns": 9,
+      "status": "PASS"
+    },
+    {
+      "table": "met_hourly",
+      "rows": 22093,
+      "columns": 4,
+      "status": "PASS"
+    },
+    {
+      "table": "minute_sleep_logs",
+      "rows": 459,
+      "columns": 8,
+      "status": "PASS"
+    },
+    {
+      "table": "quality_scorecard",
+      "rows": 14,
+      "columns": 4,
+      "status": "PASS"
+    },
+    {
+      "table": "reconciliation",
+      "rows": 9,
+      "columns": 4,
+      "status": "PASS"
+    },
+    {
+      "table": "redundancy_checks",
+      "rows": 6,
+      "columns": 4,
+      "status": "PASS"
+    },
+    {
+      "table": "resting_proxy",
+      "rows": 13,
+      "columns": 2,
+      "status": "PASS"
+    },
+    {
+      "table": "sleep_activity_pairs",
+      "rows": 410,
+      "columns": 6,
+      "status": "PASS"
+    },
+    {
+      "table": "sleep_lag_statistics",
+      "rows": 3,
+      "columns": 6,
+      "status": "PASS"
+    },
+    {
+      "table": "source_inventory",
+      "rows": 18,
+      "columns": 13,
+      "status": "PASS"
+    },
+    {
+      "table": "statistical_tests",
+      "rows": 8,
+      "columns": 8,
+      "status": "PASS"
+    },
+    {
+      "table": "threshold_sensitivity",
+      "rows": 4,
+      "columns": 3,
+      "status": "PASS"
+    },
+    {
+      "table": "user_summary",
+      "rows": 33,
+      "columns": 17,
+      "status": "PASS"
+    },
+    {
+      "table": "weekly_activity",
+      "rows": 125,
+      "columns": 7,
+      "status": "PASS"
+    }
+  ],
+  "pdf_pages": 56,
+  "pdf_text_outside_page": [],
+  "execution_method": "All cells executed sequentially with IPython; socket-free runner included",
+  "database_delivery": "Omitted: approximately 790 MiB; rebuild using the supplied importer and original CSVs"
+}

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>In Motion · Fitness & Wellness Analytics</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+  <header class="masthead">
+    <a class="brand" href="#home" aria-label="In Motion home"><span class="brand-mark" aria-hidden="true">↗</span><span>in motion<span class="brand-dot">.</span></span></a>
+    <span class="masthead-label">FITNESS & WELLNESS ANALYTICS</span>
+    <nav aria-label="Main navigation"><button class="nav-link" data-open-study>The study <span aria-hidden="true">↗</span></button><button class="watch-link" id="watch-top"><span class="tiny-play" aria-hidden="true">▶</span> Enable sound</button></nav>
+  </header>
+
+  <main id="home" class="hero">
+    <section class="hero-copy" aria-labelledby="hero-title">
+      <div class="eyebrow"><span class="live-dot" aria-hidden="true"></span> BELLABEAT CASE STUDY <span class="slash">/</span> FITBIT · 2016</div>
+      <h1 id="hero-title"><span>Find your</span><span class="lime">own rhythm.</span></h1>
+      <div class="short-rule" aria-hidden="true"></div>
+      <p class="hero-description">Every step tells a story.<br>Every habit leaves a pattern.</p>
+      <p class="hero-detail">An exploration of movement, sleep and everyday rhythms. Turning wearable data into a clearer picture of how we live.</p>
+      <div class="topics" aria-label="Project topics">
+        <span><b>01</b> / MOVEMENT</span><span><b>02</b> / SLEEP</span><span><b>03</b> / HEART RATE</span><span><b>04</b> / HABITS</span>
+      </div>
+      <div class="actions"><button class="primary-button" data-open-study>EXPLORE THE STUDY <span aria-hidden="true">↗</span></button><span class="next-note">The dashboard is<br>the next chapter.</span></div>
+      <div class="micro-caption"><span aria-hidden="true">✳</span> Real observations. Thoughtful questions.</div>
+    </section>
+
+    <section class="film" aria-label="Fitness inspiration video">
+      <div class="film-topline"><span>A MOMENT OF MOTIVATION</span><span class="film-duration">ON REPEAT</span></div>
+      <div class="video-wrap" id="video-wrap">
+        <video id="fitness-video" autoplay loop muted playsinline preload="auto" poster="assets/poster.jpg" aria-label="Uploaded motivational film with its original audio">
+          <source src="assets/fitness-film.webm" type="video/webm">
+          <source src="assets/fitness-film.mp4" type="video/mp4">
+          Your browser does not support this video. Download the MP4 from the project assets folder.
+        </video>
+        <button id="start-video" class="start-video" aria-label="Play video with original sound"><span class="play-disc" aria-hidden="true">▶</span><span>PLAY FILM</span></button>
+        <div class="film-label" aria-hidden="true">A LITTLE INSPIRATION.<br><span>A DIFFERENT PERSPECTIVE.</span></div>
+      </div>
+      <div class="player-controls" aria-label="Video playback controls">
+        <button id="play-toggle" aria-label="Play video">▶</button>
+        <span id="time-label" class="time-label">0:00 / 0:17</span>
+        <input id="seek" type="range" min="0" max="17.47" step="0.1" value="0" aria-label="Video position">
+        <button id="sound-toggle" aria-label="Enable sound" aria-pressed="true">ENABLE SOUND</button>
+        <button id="fullscreen" aria-label="View video fullscreen"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 2H2v4m8-4h4v4M2 10v4h4m4 0h4v-4"/></svg></button>
+      </div>
+      <p class="film-note"><span class="live-dot" aria-hidden="true"></span> MOVEMENT / MINDSET / EVERYDAY <span>CONTINUOUS FILM ↻</span></p>
+      <p id="player-message" role="status"></p>
+    </section>
+  </main>
+
+  <section class="study-strip" aria-label="Dataset at a glance">
+    <div class="strip-intro"><span>BEHIND THE PATTERNS</span><p>A small dataset.<br>A closer look.</p></div>
+    <div class="stat"><strong>33<span>↗</span></strong><span>ACTIVITY PARTICIPANTS</span></div>
+    <div class="stat"><strong>31</strong><span>DAYS OF OBSERVATIONS</span></div>
+    <div class="stat"><strong>18</strong><span>SOURCE DATA FILES</span></div>
+    <div class="strip-note">Movement is more than a number.<br><span>Let's understand the pattern.</span></div>
+  </section>
+  <footer><span>FITBIT DATA · 12 APR — 12 MAY 2016</span><span>PORTFOLIO CASE STUDY <span class="footer-divider">/</span> NOT AN OFFICIAL BELLABEAT PRODUCT</span></footer>
+</div>
+
+<dialog id="study-dialog" aria-labelledby="study-title">
+  <div class="dialog-top"><span>THE STORY BEHIND THE DATA</span><button id="close-study" aria-label="Close study overview">✕</button></div>
+  <h2 id="study-title">Better questions.<br><span>Meaningful insights.</span></h2>
+  <p>How do people use their fitness trackers—and what could those habits teach Bellabeat?</p>
+  <div class="study-grid"><article><span>01 / ACTIVITY</span><h3>Find the rhythm.</h3><p>Explore steps, active minutes and patterns across the day.</p></article><article><span>02 / RECOVERY</span><h3>Look beyond movement.</h3><p>Connect recorded sleep and heart-rate observations with daily routines.</p></article><article><span>03 / STRATEGY</span><h3>Make insights useful.</h3><p>Develop evidence-led ideas for the Bellabeat App/Membership.</p></article></div>
+  <p class="study-limit">A 2016 convenience sample of 33 activity participants. Findings describe this dataset; they do not establish causation or represent everyone.</p>
+  <button class="primary-button" id="back-home">BACK TO THE LANDING PAGE <span aria-hidden="true">↗</span></button>
+</dialog>
+<script src="script.js"></script>
+</body>
+</html>

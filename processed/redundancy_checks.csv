@@ -1,0 +1,7 @@
+comparison,overlap_rows,missing_keys,mismatched_values
+dailySteps vs dailyActivity,940,0,0
+dailyCalories vs dailyActivity,940,0,0
+dailyIntensities vs dailyActivity,940,0,0
+minuteSteps wide/narrow,1278060,20640,0
+minuteIntensities wide/narrow,1278060,20640,0
+minuteCalories wide/narrow,1278060,20640,0

@@ -1,0 +1,13 @@
+issue,action,rows_before,rows_after,columns_before,columns_after,justification
+Exact activity duplicates,Deduplicate activity,940,940,15,15,Retain one identical record
+Probable nonwear / negligible motion,Apply wear-quality proxy,940,846,17,17,Steps >=100 and sedentary <1440; excludes true low movement too; sensitivity reported
+Analytical features,Engineer daily features,846,846,17,26,Active share denominator is classified minutes; calories include basal expenditure
+Exact sleep duplicates,Deduplicate sleep,413,410,5,5,Remove identical daily records
+Impossible sleep values,Validate sleep,410,410,5,5,"Positive duration, asleep <= in-bed <=1440"
+Weight validity and missing Fat,Validate weight; retain missing Fat,67,67,8,8,"No imputation; analyse logging, not weight change or health"
+Hourly coverage,Restrict hours to retained activity dates,22099,20045,3,11,No imputation for absent hours; averages use observed user-hours
+Duplicate minute sleep rows,Aggregate unique sleep minutes to episodes,188521,459,4,8,Exact deduplication in SQL; raw code labels not interpreted as clinical stages
+Repeated user-days,Aggregate user features and attach personas,846,33,27,17,One observation per user for clustering and inference
+Calendar alignment,Join sleep to exact adjacent activity dates,410,410,11,6,Left joins preserve sleep days; unmatched activity remains missing
+Incomplete user-weeks,Aggregate complete study windows,846,125,27,7,Exclude final 3-day fragment; flags require seven retained days
+Sparse overlapping sensors,"Join hourly HR, intensity and raw METs",6013,5990,6,9,Inner one-to-one joins; retain only overlapping hours on proxy-valid activity dates

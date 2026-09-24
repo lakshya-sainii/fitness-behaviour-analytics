@@ -1,0 +1,354 @@
+type,name,tbl_name,sql
+index,ix_dailyActivity_date,dailyActivity,"CREATE INDEX ix_dailyActivity_date ON ""dailyActivity"" (""ActivityDate"")"
+index,ix_dailyActivity_id_date,dailyActivity,"CREATE INDEX ix_dailyActivity_id_date ON ""dailyActivity"" (Id,""ActivityDate"")"
+index,ix_dailyCalories_date,dailyCalories,"CREATE INDEX ix_dailyCalories_date ON ""dailyCalories"" (""ActivityDay"")"
+index,ix_dailyCalories_id_date,dailyCalories,"CREATE INDEX ix_dailyCalories_id_date ON ""dailyCalories"" (Id,""ActivityDay"")"
+index,ix_dailyIntensities_date,dailyIntensities,"CREATE INDEX ix_dailyIntensities_date ON ""dailyIntensities"" (""ActivityDay"")"
+index,ix_dailyIntensities_id_date,dailyIntensities,"CREATE INDEX ix_dailyIntensities_id_date ON ""dailyIntensities"" (Id,""ActivityDay"")"
+index,ix_dailySteps_date,dailySteps,"CREATE INDEX ix_dailySteps_date ON ""dailySteps"" (""ActivityDay"")"
+index,ix_dailySteps_id_date,dailySteps,"CREATE INDEX ix_dailySteps_id_date ON ""dailySteps"" (Id,""ActivityDay"")"
+index,ix_heartrate_seconds_date,heartrate_seconds,"CREATE INDEX ix_heartrate_seconds_date ON ""heartrate_seconds"" (""Time"")"
+index,ix_heartrate_seconds_id_date,heartrate_seconds,"CREATE INDEX ix_heartrate_seconds_id_date ON ""heartrate_seconds"" (Id,""Time"")"
+index,ix_hourlyCalories_date,hourlyCalories,"CREATE INDEX ix_hourlyCalories_date ON ""hourlyCalories"" (""ActivityHour"")"
+index,ix_hourlyCalories_id_date,hourlyCalories,"CREATE INDEX ix_hourlyCalories_id_date ON ""hourlyCalories"" (Id,""ActivityHour"")"
+index,ix_hourlyIntensities_date,hourlyIntensities,"CREATE INDEX ix_hourlyIntensities_date ON ""hourlyIntensities"" (""ActivityHour"")"
+index,ix_hourlyIntensities_id_date,hourlyIntensities,"CREATE INDEX ix_hourlyIntensities_id_date ON ""hourlyIntensities"" (Id,""ActivityHour"")"
+index,ix_hourlySteps_date,hourlySteps,"CREATE INDEX ix_hourlySteps_date ON ""hourlySteps"" (""ActivityHour"")"
+index,ix_hourlySteps_id_date,hourlySteps,"CREATE INDEX ix_hourlySteps_id_date ON ""hourlySteps"" (Id,""ActivityHour"")"
+index,ix_minuteCaloriesNarrow_date,minuteCaloriesNarrow,"CREATE INDEX ix_minuteCaloriesNarrow_date ON ""minuteCaloriesNarrow"" (""ActivityMinute"")"
+index,ix_minuteCaloriesNarrow_id_date,minuteCaloriesNarrow,"CREATE INDEX ix_minuteCaloriesNarrow_id_date ON ""minuteCaloriesNarrow"" (Id,""ActivityMinute"")"
+index,ix_minuteCaloriesWide_date,minuteCaloriesWide,"CREATE INDEX ix_minuteCaloriesWide_date ON ""minuteCaloriesWide"" (""ActivityHour"")"
+index,ix_minuteCaloriesWide_id_date,minuteCaloriesWide,"CREATE INDEX ix_minuteCaloriesWide_id_date ON ""minuteCaloriesWide"" (Id,""ActivityHour"")"
+index,ix_minuteIntensitiesNarrow_date,minuteIntensitiesNarrow,"CREATE INDEX ix_minuteIntensitiesNarrow_date ON ""minuteIntensitiesNarrow"" (""ActivityMinute"")"
+index,ix_minuteIntensitiesNarrow_id_date,minuteIntensitiesNarrow,"CREATE INDEX ix_minuteIntensitiesNarrow_id_date ON ""minuteIntensitiesNarrow"" (Id,""ActivityMinute"")"
+index,ix_minuteIntensitiesWide_date,minuteIntensitiesWide,"CREATE INDEX ix_minuteIntensitiesWide_date ON ""minuteIntensitiesWide"" (""ActivityHour"")"
+index,ix_minuteIntensitiesWide_id_date,minuteIntensitiesWide,"CREATE INDEX ix_minuteIntensitiesWide_id_date ON ""minuteIntensitiesWide"" (Id,""ActivityHour"")"
+index,ix_minuteMETsNarrow_date,minuteMETsNarrow,"CREATE INDEX ix_minuteMETsNarrow_date ON ""minuteMETsNarrow"" (""ActivityMinute"")"
+index,ix_minuteMETsNarrow_id_date,minuteMETsNarrow,"CREATE INDEX ix_minuteMETsNarrow_id_date ON ""minuteMETsNarrow"" (Id,""ActivityMinute"")"
+index,ix_minuteSleep_date,minuteSleep,"CREATE INDEX ix_minuteSleep_date ON ""minuteSleep"" (""date"")"
+index,ix_minuteSleep_id_date,minuteSleep,"CREATE INDEX ix_minuteSleep_id_date ON ""minuteSleep"" (Id,""date"")"
+index,ix_minuteStepsNarrow_date,minuteStepsNarrow,"CREATE INDEX ix_minuteStepsNarrow_date ON ""minuteStepsNarrow"" (""ActivityMinute"")"
+index,ix_minuteStepsNarrow_id_date,minuteStepsNarrow,"CREATE INDEX ix_minuteStepsNarrow_id_date ON ""minuteStepsNarrow"" (Id,""ActivityMinute"")"
+index,ix_minuteStepsWide_date,minuteStepsWide,"CREATE INDEX ix_minuteStepsWide_date ON ""minuteStepsWide"" (""ActivityHour"")"
+index,ix_minuteStepsWide_id_date,minuteStepsWide,"CREATE INDEX ix_minuteStepsWide_id_date ON ""minuteStepsWide"" (Id,""ActivityHour"")"
+index,ix_sleepDay_date,sleepDay,"CREATE INDEX ix_sleepDay_date ON ""sleepDay"" (""SleepDay"")"
+index,ix_sleepDay_id_date,sleepDay,"CREATE INDEX ix_sleepDay_id_date ON ""sleepDay"" (Id,""SleepDay"")"
+index,ix_weightLogInfo_date,weightLogInfo,"CREATE INDEX ix_weightLogInfo_date ON ""weightLogInfo"" (""Date"")"
+index,ix_weightLogInfo_id_date,weightLogInfo,"CREATE INDEX ix_weightLogInfo_id_date ON ""weightLogInfo"" (Id,""Date"")"
+table,column_audit,column_audit,"CREATE TABLE ""column_audit"" (
+""table_name"" TEXT,
+  ""column_name"" TEXT,
+  ""storage_type"" TEXT,
+  ""null_rows"" INTEGER,
+  ""negative_rows"" INTEGER
+)"
+table,dailyActivity,dailyActivity,"CREATE TABLE ""dailyActivity"" (
+""Id"" INTEGER,
+  ""ActivityDate"" TEXT,
+  ""TotalSteps"" REAL,
+  ""TotalDistance"" REAL,
+  ""TrackerDistance"" REAL,
+  ""LoggedActivitiesDistance"" REAL,
+  ""VeryActiveDistance"" REAL,
+  ""ModeratelyActiveDistance"" REAL,
+  ""LightActiveDistance"" REAL,
+  ""SedentaryActiveDistance"" REAL,
+  ""VeryActiveMinutes"" REAL,
+  ""FairlyActiveMinutes"" REAL,
+  ""LightlyActiveMinutes"" REAL,
+  ""SedentaryMinutes"" REAL,
+  ""Calories"" REAL
+)"
+table,dailyCalories,dailyCalories,"CREATE TABLE ""dailyCalories"" (
+""Id"" INTEGER,
+  ""ActivityDay"" TEXT,
+  ""Calories"" REAL
+)"
+table,dailyIntensities,dailyIntensities,"CREATE TABLE ""dailyIntensities"" (
+""Id"" INTEGER,
+  ""ActivityDay"" TEXT,
+  ""SedentaryMinutes"" REAL,
+  ""LightlyActiveMinutes"" REAL,
+  ""FairlyActiveMinutes"" REAL,
+  ""VeryActiveMinutes"" REAL,
+  ""SedentaryActiveDistance"" REAL,
+  ""LightActiveDistance"" REAL,
+  ""ModeratelyActiveDistance"" REAL,
+  ""VeryActiveDistance"" REAL
+)"
+table,dailySteps,dailySteps,"CREATE TABLE ""dailySteps"" (
+""Id"" INTEGER,
+  ""ActivityDay"" TEXT,
+  ""StepTotal"" REAL
+)"
+table,heartrate_seconds,heartrate_seconds,"CREATE TABLE ""heartrate_seconds"" (
+""Id"" INTEGER,
+  ""Time"" TEXT,
+  ""Value"" REAL
+)"
+table,hourlyCalories,hourlyCalories,"CREATE TABLE ""hourlyCalories"" (
+""Id"" INTEGER,
+  ""ActivityHour"" TEXT,
+  ""Calories"" REAL
+)"
+table,hourlyIntensities,hourlyIntensities,"CREATE TABLE ""hourlyIntensities"" (
+""Id"" INTEGER,
+  ""ActivityHour"" TEXT,
+  ""TotalIntensity"" REAL,
+  ""AverageIntensity"" REAL
+)"
+table,hourlySteps,hourlySteps,"CREATE TABLE ""hourlySteps"" (
+""Id"" INTEGER,
+  ""ActivityHour"" TEXT,
+  ""StepTotal"" REAL
+)"
+table,minuteCaloriesNarrow,minuteCaloriesNarrow,"CREATE TABLE ""minuteCaloriesNarrow"" (
+""Id"" INTEGER,
+  ""ActivityMinute"" TEXT,
+  ""Calories"" REAL
+)"
+table,minuteCaloriesWide,minuteCaloriesWide,"CREATE TABLE ""minuteCaloriesWide"" (
+""Id"" INTEGER,
+  ""ActivityHour"" TEXT,
+  ""Calories00"" REAL,
+  ""Calories01"" REAL,
+  ""Calories02"" REAL,
+  ""Calories03"" REAL,
+  ""Calories04"" REAL,
+  ""Calories05"" REAL,
+  ""Calories06"" REAL,
+  ""Calories07"" REAL,
+  ""Calories08"" REAL,
+  ""Calories09"" REAL,
+  ""Calories10"" REAL,
+  ""Calories11"" REAL,
+  ""Calories12"" REAL,
+  ""Calories13"" REAL,
+  ""Calories14"" REAL,
+  ""Calories15"" REAL,
+  ""Calories16"" REAL,
+  ""Calories17"" REAL,
+  ""Calories18"" REAL,
+  ""Calories19"" REAL,
+  ""Calories20"" REAL,
+  ""Calories21"" REAL,
+  ""Calories22"" REAL,
+  ""Calories23"" REAL,
+  ""Calories24"" REAL,
+  ""Calories25"" REAL,
+  ""Calories26"" REAL,
+  ""Calories27"" REAL,
+  ""Calories28"" REAL,
+  ""Calories29"" REAL,
+  ""Calories30"" REAL,
+  ""Calories31"" REAL,
+  ""Calories32"" REAL,
+  ""Calories33"" REAL,
+  ""Calories34"" REAL,
+  ""Calories35"" REAL,
+  ""Calories36"" REAL,
+  ""Calories37"" REAL,
+  ""Calories38"" REAL,
+  ""Calories39"" REAL,
+  ""Calories40"" REAL,
+  ""Calories41"" REAL,
+  ""Calories42"" REAL,
+  ""Calories43"" REAL,
+  ""Calories44"" REAL,
+  ""Calories45"" REAL,
+  ""Calories46"" REAL,
+  ""Calories47"" REAL,
+  ""Calories48"" REAL,
+  ""Calories49"" REAL,
+  ""Calories50"" REAL,
+  ""Calories51"" REAL,
+  ""Calories52"" REAL,
+  ""Calories53"" REAL,
+  ""Calories54"" REAL,
+  ""Calories55"" REAL,
+  ""Calories56"" REAL,
+  ""Calories57"" REAL,
+  ""Calories58"" REAL,
+  ""Calories59"" REAL
+)"
+table,minuteIntensitiesNarrow,minuteIntensitiesNarrow,"CREATE TABLE ""minuteIntensitiesNarrow"" (
+""Id"" INTEGER,
+  ""ActivityMinute"" TEXT,
+  ""Intensity"" REAL
+)"
+table,minuteIntensitiesWide,minuteIntensitiesWide,"CREATE TABLE ""minuteIntensitiesWide"" (
+""Id"" INTEGER,
+  ""ActivityHour"" TEXT,
+  ""Intensity00"" REAL,
+  ""Intensity01"" REAL,
+  ""Intensity02"" REAL,
+  ""Intensity03"" REAL,
+  ""Intensity04"" REAL,
+  ""Intensity05"" REAL,
+  ""Intensity06"" REAL,
+  ""Intensity07"" REAL,
+  ""Intensity08"" REAL,
+  ""Intensity09"" REAL,
+  ""Intensity10"" REAL,
+  ""Intensity11"" REAL,
+  ""Intensity12"" REAL,
+  ""Intensity13"" REAL,
+  ""Intensity14"" REAL,
+  ""Intensity15"" REAL,
+  ""Intensity16"" REAL,
+  ""Intensity17"" REAL,
+  ""Intensity18"" REAL,
+  ""Intensity19"" REAL,
+  ""Intensity20"" REAL,
+  ""Intensity21"" REAL,
+  ""Intensity22"" REAL,
+  ""Intensity23"" REAL,
+  ""Intensity24"" REAL,
+  ""Intensity25"" REAL,
+  ""Intensity26"" REAL,
+  ""Intensity27"" REAL,
+  ""Intensity28"" REAL,
+  ""Intensity29"" REAL,
+  ""Intensity30"" REAL,
+  ""Intensity31"" REAL,
+  ""Intensity32"" REAL,
+  ""Intensity33"" REAL,
+  ""Intensity34"" REAL,
+  ""Intensity35"" REAL,
+  ""Intensity36"" REAL,
+  ""Intensity37"" REAL,
+  ""Intensity38"" REAL,
+  ""Intensity39"" REAL,
+  ""Intensity40"" REAL,
+  ""Intensity41"" REAL,
+  ""Intensity42"" REAL,
+  ""Intensity43"" REAL,
+  ""Intensity44"" REAL,
+  ""Intensity45"" REAL,
+  ""Intensity46"" REAL,
+  ""Intensity47"" REAL,
+  ""Intensity48"" REAL,
+  ""Intensity49"" REAL,
+  ""Intensity50"" REAL,
+  ""Intensity51"" REAL,
+  ""Intensity52"" REAL,
+  ""Intensity53"" REAL,
+  ""Intensity54"" REAL,
+  ""Intensity55"" REAL,
+  ""Intensity56"" REAL,
+  ""Intensity57"" REAL,
+  ""Intensity58"" REAL,
+  ""Intensity59"" REAL
+)"
+table,minuteMETsNarrow,minuteMETsNarrow,"CREATE TABLE ""minuteMETsNarrow"" (
+""Id"" INTEGER,
+  ""ActivityMinute"" TEXT,
+  ""METs"" REAL
+)"
+table,minuteSleep,minuteSleep,"CREATE TABLE ""minuteSleep"" (
+""Id"" INTEGER,
+  ""date"" TEXT,
+  ""value"" REAL,
+  ""logId"" INTEGER
+)"
+table,minuteStepsNarrow,minuteStepsNarrow,"CREATE TABLE ""minuteStepsNarrow"" (
+""Id"" INTEGER,
+  ""ActivityMinute"" TEXT,
+  ""Steps"" REAL
+)"
+table,minuteStepsWide,minuteStepsWide,"CREATE TABLE ""minuteStepsWide"" (
+""Id"" INTEGER,
+  ""ActivityHour"" TEXT,
+  ""Steps00"" REAL,
+  ""Steps01"" REAL,
+  ""Steps02"" REAL,
+  ""Steps03"" REAL,
+  ""Steps04"" REAL,
+  ""Steps05"" REAL,
+  ""Steps06"" REAL,
+  ""Steps07"" REAL,
+  ""Steps08"" REAL,
+  ""Steps09"" REAL,
+  ""Steps10"" REAL,
+  ""Steps11"" REAL,
+  ""Steps12"" REAL,
+  ""Steps13"" REAL,
+  ""Steps14"" REAL,
+  ""Steps15"" REAL,
+  ""Steps16"" REAL,
+  ""Steps17"" REAL,
+  ""Steps18"" REAL,
+  ""Steps19"" REAL,
+  ""Steps20"" REAL,
+  ""Steps21"" REAL,
+  ""Steps22"" REAL,
+  ""Steps23"" REAL,
+  ""Steps24"" REAL,
+  ""Steps25"" REAL,
+  ""Steps26"" REAL,
+  ""Steps27"" REAL,
+  ""Steps28"" REAL,
+  ""Steps29"" REAL,
+  ""Steps30"" REAL,
+  ""Steps31"" REAL,
+  ""Steps32"" REAL,
+  ""Steps33"" REAL,
+  ""Steps34"" REAL,
+  ""Steps35"" REAL,
+  ""Steps36"" REAL,
+  ""Steps37"" REAL,
+  ""Steps38"" REAL,
+  ""Steps39"" REAL,
+  ""Steps40"" REAL,
+  ""Steps41"" REAL,
+  ""Steps42"" REAL,
+  ""Steps43"" REAL,
+  ""Steps44"" REAL,
+  ""Steps45"" REAL,
+  ""Steps46"" REAL,
+  ""Steps47"" REAL,
+  ""Steps48"" REAL,
+  ""Steps49"" REAL,
+  ""Steps50"" REAL,
+  ""Steps51"" REAL,
+  ""Steps52"" REAL,
+  ""Steps53"" REAL,
+  ""Steps54"" REAL,
+  ""Steps55"" REAL,
+  ""Steps56"" REAL,
+  ""Steps57"" REAL,
+  ""Steps58"" REAL,
+  ""Steps59"" REAL
+)"
+table,sleepDay,sleepDay,"CREATE TABLE ""sleepDay"" (
+""Id"" INTEGER,
+  ""SleepDay"" TEXT,
+  ""TotalSleepRecords"" REAL,
+  ""TotalMinutesAsleep"" REAL,
+  ""TotalTimeInBed"" REAL
+)"
+table,source_inventory,source_inventory,"CREATE TABLE ""source_inventory"" (
+""table_name"" TEXT,
+  ""filename"" TEXT,
+  ""rows"" INTEGER,
+  ""columns"" INTEGER,
+  ""users"" INTEGER,
+  ""date_column"" TEXT,
+  ""start"" TEXT,
+  ""end"" TEXT,
+  ""grain"" TEXT,
+  ""duplicate_rows"" INTEGER,
+  ""duplicate_keys"" INTEGER,
+  ""megabytes"" REAL,
+  ""sha256"" TEXT
+)"
+table,weightLogInfo,weightLogInfo,"CREATE TABLE ""weightLogInfo"" (
+""Id"" INTEGER,
+  ""Date"" TEXT,
+  ""WeightKg"" REAL,
+  ""WeightPounds"" REAL,
+  ""Fat"" REAL,
+  ""BMI"" REAL,
+  ""IsManualReport"" INTEGER,
+  ""LogId"" INTEGER
+)"

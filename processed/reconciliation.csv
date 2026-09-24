@@ -1,0 +1,10 @@
+metric,python,sql,match
+activity_users,33.0,33.0,True
+clean_activity_rows,846.0,846.0,True
+average_steps,8426.832151300236,8426.832151300236,True
+clean_sleep_rows,410.0,410.0,True
+average_sleep_minutes,419.17317073170733,419.1731707317073,True
+clean_weight_rows,67.0,67.0,True
+segment: Keep momentum,18.0,18.0,True
+segment: Reconnect,9.0,9.0,True
+segment: Build routine,6.0,6.0,True
